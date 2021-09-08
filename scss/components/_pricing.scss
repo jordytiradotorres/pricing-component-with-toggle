@@ -1,0 +1,88 @@
+.pricing {
+  margin-top: 4rem;
+
+  & span {
+    display: block;
+  }
+
+  &__base,
+  &__professional,
+  &__master {
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+
+    & > span {
+      border-bottom: thin solid $light-grayish-blue;
+      padding: 1rem 0;
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: $grayish-blue;
+  }
+
+  & &__total {
+    padding: 1.5rem 0;
+    font-size: 5rem;
+    font-weight: 700;
+    color: darken($dark-grayish-blue, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .dollar {
+      display: inline-block;
+      font-size: 3rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__base {
+    &-users,
+    &-storage,
+    &-send {
+      color: $grayish-blue;
+    }
+  }
+
+  &__professional {
+    background: linear-gradient(
+      to bottom,
+      $linear-gradient-color-one,
+      $linear-gradient-color-two
+    );
+
+    & * {
+      color: $very-light-grayish-blue;
+    }
+
+    & .pricing__total {
+      color: $very-light-grayish-blue;
+    }
+
+    & .button.button-professional {
+      background: $very-light-grayish-blue;
+      color: $linear-gradient-color-two;
+
+      &:hover {
+        background: $linear-gradient-color-two;
+        color: $very-light-grayish-blue;
+        border: thin solid $very-light-grayish-blue;
+      }
+    }
+  }
+
+  .button {
+    @include button(
+      linear-gradient(
+        to right,
+        $linear-gradient-color-one,
+        $linear-gradient-color-two
+      )
+    );
+  }
+}

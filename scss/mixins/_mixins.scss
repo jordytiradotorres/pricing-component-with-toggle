@@ -1,0 +1,39 @@
+@mixin mq($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else if type-of($breakpoint) == number and unit($breakpoint) == "px" {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  } @else if(type-of($breakpoint) == number and unit($breakpoint) == "em") {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+@mixin button($bgc) {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  text-transform: uppercase;
+  background: $bgc;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+  color: $very-light-grayish-blue;
+  border: thin solid transparent;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background: $very-light-grayish-blue;
+    border: thin solid $grayish-blue;
+    color: $linear-gradient-color-two;
+  }
+}

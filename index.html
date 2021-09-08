@@ -24,33 +24,51 @@
     </style>
   </head>
   <body>
-    <!-- Our Pricing
-  Annually
-  Monthly
+    <figure class="bg-top">
+      <img src="./images/bg-top.svg" alt="bg top" />
+    </figure>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+    <figure class="bg-bottom">
+      <img src="./images/bg-bottom.svg" alt="bg bottom" />
+    </figure>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+    <h1 class="title">Our Pricing</h1>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More -->
+    <div class="plan">
+      <span>Annually</span>
+      <input type="checkbox" class="plan__input" />
+      <span>Monthly</span>
+    </div>
+
+    <main class="pricing">
+      <div class="pricing__base">
+        <h3 class="pricing__title">Basic</h3>
+        <span class="pricing__total"><span class="dollar">$</span>19.99</span>
+        <span class="pricing__base-storage">500 GB Storage</span>
+        <span class="pricing__base-users">2 Users Allowed</span>
+        <span class="pricing__base-send">Send up to 3 GB</span>
+        <button type="button" class="button">Learn More</button>
+      </div>
+
+      <div class="pricing__professional">
+        <h3 class="pricing__title">Professional</h3>
+        <span class="pricing__total"><span class="dollar">$</span>24.99</span>
+        <span class="pricing__base-storage">1 TB Storage</span>
+        <span class="pricing__base-users">5 Users Allowed</span>
+        <span class="pricing__base-send">Send up to 10 GB</span>
+        <button type="button" class="button button-professional">
+          Learn More
+        </button>
+      </div>
+      <div class="pricing__master">
+        <h3 class="pricing__title">Master</h3>
+        <span class="pricing__total"><span class="dollar">$</span>39.99</span>
+        <span class="pricing__base-storage">2 TB Storage</span>
+        <span class="pricing__base-users">10 Users Allowed</span>
+        <span class="pricing__base-send">Send up to 20 GB</span>
+        <button type="button" class="button">Learn More</button>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by

@@ -1,0 +1,29 @@
+.bg-top {
+  position: absolute;
+  top: -2rem;
+  right: -12.5rem;
+}
+.bg-bottom {
+  display: none;
+
+  @include mq(large) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.title {
+  color: $dark-grayish-blue;
+  margin-top: 4rem;
+}
+
+.plan {
+  margin-top: 2rem;
+  color: $grayish-blue;
+
+  &__input {
+    margin: 0 1rem;
+  }
+}

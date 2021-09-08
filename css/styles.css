@@ -1,3 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+:root {
+  box-sizing: border-box;
+  font-size: 15px; }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+figure,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; }
+
+body {
+  position: relative;
+  margin: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f6f6fe; }
+  body > * {
+    position: relative; }
+
+.wrapper {
+  margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .wrapper {
+      max-width: 960px; } }
+
+.attribution {
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  padding: 0.5rem;
+  margin-top: 2rem; }
+
+.bg-top {
+  position: absolute;
+  top: -2rem;
+  right: -12.5rem; }
+
+.bg-bottom {
+  display: none; }
+  @media (min-width: 1024px) {
+    .bg-bottom {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0; } }
+
+.title {
+  color: #494c5f;
+  margin-top: 4rem; }
+
+.plan {
+  margin-top: 2rem;
+  color: #6d708d; }
+  .plan__input {
+    margin: 0 1rem; }
+
+.pricing {
+  margin-top: 4rem; }
+  .pricing span {
+    display: block; }
+  .pricing__base, .pricing__professional, .pricing__master {
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem; }
+    .pricing__base > span, .pricing__professional > span, .pricing__master > span {
+      border-bottom: thin solid #b3b5c6;
+      padding: 1rem 0; }
+  .pricing__title {
+    font-size: 1.5rem;
+    color: #6d708d; }
+  .pricing .pricing__total {
+    padding: 1.5rem 0;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #333542;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .pricing .pricing__total .dollar {
+      display: inline-block;
+      font-size: 3rem;
+      margin-right: 0.5rem; }
+  .pricing__base-users, .pricing__base-storage, .pricing__base-send {
+    color: #6d708d; }
+  .pricing__professional {
+    background: linear-gradient(to bottom, #a3a8f0, #696fdd); }
+    .pricing__professional * {
+      color: #f6f6fe; }
+    .pricing__professional .pricing__total {
+      color: #f6f6fe; }
+    .pricing__professional .button.button-professional {
+      background: #f6f6fe;
+      color: #696fdd; }
+      .pricing__professional .button.button-professional:hover {
+        background: #696fdd;
+        color: #f6f6fe;
+        border: thin solid #f6f6fe; }
+  .pricing .button {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #a3a8f0, #696fdd);
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+    color: #f6f6fe;
+    border: thin solid transparent;
+    transition: all 0.2s;
+    cursor: pointer; }
+    .pricing .button:hover {
+      background: #f6f6fe;
+      border: thin solid #6d708d;
+      color: #696fdd; }
 
 /*# sourceMappingURL=styles.css.map */
