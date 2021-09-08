@@ -1,7 +1,21 @@
 .bg-top {
   position: absolute;
-  top: -2rem;
+  top: 0;
+  bottom: 0;
   right: -12.5rem;
+  left: 16rem;
+
+  // @include mq(medium) {
+  //   position: absolute;
+  //   top: -2rem;
+  //   right: 0;
+  //   left: 31rem;
+  // }
+  @include mq(large) {
+    position: absolute;
+    top: 0rem;
+    left: 63rem;
+  }
 }
 .bg-bottom {
   display: none;

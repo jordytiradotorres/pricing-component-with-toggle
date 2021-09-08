@@ -1,6 +1,11 @@
 .pricing {
   margin-top: 4rem;
 
+  @include mq(large) {
+    display: flex;
+    align-items: center;
+  }
+
   & span {
     display: block;
   }
@@ -73,6 +78,11 @@
         color: $very-light-grayish-blue;
         border: thin solid $very-light-grayish-blue;
       }
+    }
+
+    @include mq(large) {
+      padding: 2.8rem;
+      height: 500px;
     }
   }
 

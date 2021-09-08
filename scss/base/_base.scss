@@ -43,6 +43,10 @@ body {
   & > * {
     position: relative;
   }
+
+  @include mq(medium) {
+    justify-content: flex-start;
+  }
 }
 
 .wrapper {
