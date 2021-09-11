@@ -81,9 +81,37 @@ body {
 
 .plan {
   margin-top: 2rem;
-  color: #6d708d; }
+  color: #6d708d;
+  display: flex;
+  align-items: center; }
   .plan__input {
-    margin: 0 1rem; }
+    position: relative;
+    margin: 5px 0;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+    .plan__input input {
+      appearance: none;
+      display: none; }
+    .plan__input span {
+      position: relative;
+      display: block;
+      width: 60px;
+      height: 30px;
+      background: linear-gradient(to right, #a3a8f0, #696fdd);
+      border-radius: 40px; }
+    .plan__input .indicator {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border-radius: 50%;
+      transition: 0.5s;
+      transform: scale(0.8); }
+    .plan__input input:checked ~ .indicator {
+      left: 30px; }
 
 .pricing {
   margin-top: 4rem; }
